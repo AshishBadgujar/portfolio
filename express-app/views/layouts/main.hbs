@@ -1,0 +1,58 @@
+<html class='h-100' lang='en'>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta
+      name='viewport'
+      content='width=device-width,initial-scale=1,shrink-to-fit=no'
+    />
+    <meta
+      name='description'
+      content='A growing collection of ready to use components for the CSS framework Bootstrap 5'
+    />
+
+    <meta name='author' content='Holger Koenemann' />
+    <meta name='generator' content='Eleventy v2.0.1' />
+    <meta name='HandheldFriendly' content='true' />
+    <title>Welcome!</title>
+    <link rel='stylesheet' href='../assets/css/theme.css' />
+
+    <style>
+      .bg-img { background-image: url(../assets/img/webp/bck8.webp); } @media
+      only screen and (max-width: 576px) { .bg-img { background-image:
+      url(../assets/img/webp/bck8_xs.webp); } } @media only screen and
+      (max-width: 992px) { .bg-img { background-image:
+      url(../assets/img/webp/bck8_xs.webp); } } @media only screen and
+      (max-width: 1440px) { .bg-img { background-image:
+      url(../assets/img/webp/bck8_md.webp); } } @media only screen and
+      (min-width: 1441px) { .bg-img { background-image:
+      url(../assets/img/webp/bck8_xl.webp); } }
+    </style>
+
+  </head>
+
+  <body
+    class='position-relative d-flex h-100 w-100'
+    data-bs-spy='scroll'
+    data-bs-target='#navScroll'
+  >
+    <div class='h-100 container-fluid position-relative'>
+      <div class='h-100 row d-flex align-items-stretch position-relative z-1'>
+
+        <div
+          class='p-0 col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-5 d-flex align-items-start flex-column shadow position-relative'
+        >
+
+          {{>header}}
+          {{{body}}}
+          {{>footer}}
+        </div>
+        <div
+          class='col-1 col-sm-2 col-md-3 col-lg-4 col-xl-5 col-xxl-7 bg-cover py-vh-max py-lg-0 bg-black ba-local position-fixed top-0 end-0 z-0 h-100 bg-img'
+          data-aos='fade'
+        ></div>
+      </div>
+    </div>
+  </body>
+
+</html>
